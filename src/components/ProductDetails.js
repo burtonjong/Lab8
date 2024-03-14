@@ -20,6 +20,7 @@ const ProductDetails = () => {
         const data = await getProductDetails(productId);
         setProduct(data);
         setError('');
+        console.log(data);
       } catch (error) {
         setError('Failed to fetch product details.');
         console.error(error);

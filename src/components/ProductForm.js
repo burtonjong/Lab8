@@ -53,7 +53,7 @@ const ProductForm = () => {
     setLoading(true);
 
     const apiCall = productId ? editProduct(productId, product) : addProduct(product);
-
+    console.log(apiCall)
     apiCall.then(response => {
       setLoading(false);
       saveProduct(response.data);
