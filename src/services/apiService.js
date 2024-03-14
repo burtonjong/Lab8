@@ -41,7 +41,7 @@ export const addProduct = (product) => {
 // Edits an existing product by ID
 export const editProduct = async (id, product) => {
   try {
-    const response = await axios.put(`${BASE_URL}/${id}`, product);
+    const response = await axios.put(`${BASE_URL}/edit/${id}`, product);
     return response.data;
   } catch (error) {
     throw error;
